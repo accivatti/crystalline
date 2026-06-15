@@ -45,7 +45,7 @@
     "image": "https://crystallinemgmt.com/images/chef.jpg",
     "founder": {
       "@type": "Person",
-      "name": "Charlie Accivatti",
+      "name": "Charles Accivatti",
       "jobTitle": "Hospitality Operator & Culinary Host"
     },
     "address": {
@@ -66,7 +66,7 @@
       "Handmade pasta"
     ],
     "sameAs": [
-      "https://www.instagram.com/accivatti"
+      "https://www.instagram.com/YOUR_INSTAGRAM_HANDLE"
     ],
     "makesOffer": [
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Dinners" } },
@@ -230,7 +230,7 @@
             precious. Refined, but always glad you came.
           </p>
 
-          <p class="signature reveal">— Charlie Accivatti</p>
+          <p class="signature reveal">— Charles Accivatti</p>
         </div>
       </div>
     </section>
@@ -264,8 +264,8 @@
           <article class="exp-card reveal">
             <div class="exp-media"><img src="images/oven.jpg" alt="A pizza baking in the flame of a wood-fired oven" loading="lazy" data-ph="oven.jpg" /></div>
             <div class="exp-body">
-              <h3>Artisanal Pizza Party at Home</h3>
-              <p>A front-row seat to the stone fired oven, with each hand-stretched pizza topped to order!</p>
+              <h3>Chef’s Table Experiences</h3>
+              <p>A front-row seat to the cooking, with courses paced and explained as they land.</p>
             </div>
           </article>
 
@@ -294,35 +294,14 @@
           </p>
         </div>
 
-        <!-- FORMSPREE: replace YOUR_WAITLIST_FORM_ID below -->
-        <form class="form card reveal" action="https://formspree.io/f/YOUR_WAITLIST_FORM_ID" method="POST" novalidate>
-          <input type="hidden" name="_subject" value="New Dinner List signup — Crystalline Management" />
-          <div class="field">
-            <label for="wl-name">Name</label>
-            <input id="wl-name" name="name" type="text" autocomplete="name" required />
-          </div>
-          <div class="field">
-            <label for="wl-email">Email</label>
-            <input id="wl-email" name="email" type="email" autocomplete="email" required />
-          </div>
-          <div class="field">
-            <label for="wl-phone">Phone</label>
-            <input id="wl-phone" name="phone" type="tel" autocomplete="tel" />
-          </div>
-          <div class="field">
-            <label for="wl-interest">Interest</label>
-            <select id="wl-interest" name="interest">
-              <option value="">Choose one</option>
-              <option>Private Dinners</option>
-              <option>Artisanal Pizza Party</option>
-              <option>Ravioli Nights</option>
-              <option>Chef’s Table Experiences</option>
-              <option>Special Events</option>
-            </select>
-          </div>
-          <button class="btn btn-solid form-submit" type="submit">Join the Dinner List</button>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
+        <div class="form-cta card reveal">
+          <p class="form-cta-text">
+            Add your name and you’ll be among the first to hear when the next dinner or
+            workshop is set.
+          </p>
+          <a class="btn btn-solid" href="https://docs.google.com/forms/d/e/1FAIpQLScsy7BRkCKx631ogM0QWTM4AVlfbI9v90E833TQBjMyxWCupQ/viewform" target="_blank" rel="noopener">Join the Dinner List</a>
+          <p class="form-cta-note">Opens a short form — about a minute.</p>
+        </div>
       </div>
     </section>
 
@@ -351,57 +330,23 @@
           <p class="eyebrow reveal">Book an event</p>
           <h2 class="section-title reveal" id="contact-title">Let’s set a date.</h2>
           <p class="reveal">
-            Tell me a little about what you have in mind. I read every message myself and reply within
-            a day or two with the right next step.
+            Get on the list for upcoming dinners and workshops, or send me a note about a
+            private event — I read every message myself and reply within a day or two.
           </p>
           <address class="contact-details reveal">
             <strong>Crystalline Management</strong><br />
             Buffalo, New York<br />
-            <a href="mailto:caa@crystallinemgmt.com">caa@crystallinemgmt.com</a>
+            <a href="mailto:hello@crystallinemgmt.com">hello@crystallinemgmt.com</a>
           </address>
         </div>
 
-        <!-- FORMSPREE: replace YOUR_CONTACT_FORM_ID below -->
-        <form class="form card reveal" action="https://formspree.io/f/YOUR_CONTACT_FORM_ID" method="POST" novalidate>
-          <input type="hidden" name="_subject" value="New event inquiry — Crystalline Management" />
-          <div class="field">
-            <label for="c-name">Name</label>
-            <input id="c-name" name="name" type="text" autocomplete="name" required />
-          </div>
-          <div class="field">
-            <label for="c-email">Email</label>
-            <input id="c-email" name="email" type="email" autocomplete="email" required />
-          </div>
-          <div class="field">
-            <label for="c-phone">Phone</label>
-            <input id="c-phone" name="phone" type="tel" autocomplete="tel" />
-          </div>
-          <div class="field">
-            <label for="c-type">Type of Event</label>
-            <select id="c-type" name="event_type">
-              <option value="">Choose one</option>
-              <option>Private Dinner</option>
-              <option>Ravioli Night</option>
-              <option>Chef’s Table</option>
-              <option>Catering / Special Event</option>
-              <option>Hospitality Consulting</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="c-guests">Guest Count</label>
-            <input id="c-guests" name="guest_count" type="number" min="1" inputmode="numeric" />
-          </div>
-          <div class="field">
-            <label for="c-date">Preferred Date</label>
-            <input id="c-date" name="preferred_date" type="date" />
-          </div>
-          <div class="field field-full">
-            <label for="c-message">Message</label>
-            <textarea id="c-message" name="message" rows="4"></textarea>
-          </div>
-          <button class="btn btn-solid form-submit field-full" type="submit">Send Inquiry</button>
-          <p class="form-status field-full" role="status" aria-live="polite"></p>
-        </form>
+        <div class="form-cta card reveal">
+          <p class="form-cta-text">
+            Use the form to get on the list for upcoming dinners and workshops.
+          </p>
+          <a class="btn btn-solid" href="https://docs.google.com/forms/d/e/1FAIpQLScsy7BRkCKx631ogM0QWTM4AVlfbI9v90E833TQBjMyxWCupQ/viewform" target="_blank" rel="noopener">Get on the List</a>
+          <p class="form-cta-note">Planning a specific event? Email <a href="mailto:hello@crystallinemgmt.com">hello@crystallinemgmt.com</a>.</p>
+        </div>
       </div>
     </section>
   </main>
@@ -420,7 +365,7 @@
         <a href="#waitlist">Dinner List</a>
         <a href="#contact">Book an Event</a>
         <!-- Replace with your real Instagram URL -->
-        <a href="https://www.instagram.com/accivatti" rel="noopener" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE" rel="noopener" target="_blank">Instagram</a>
       </div>
     </div>
     <div class="wrap footer-legal">

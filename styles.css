@@ -253,6 +253,12 @@ section[id], #top { scroll-margin-top: 88px; }
 .form-status.is-error { color: #9b3b2e; }
 .form-status.is-ok { color: var(--gold); }
 
+/* Button-style CTA cards (link out to Google Form) */
+.form-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 1.3rem; }
+.form-cta-text { color: var(--ink-soft); font-size: 1.05rem; }
+.form-cta-note { font-size: .9rem; color: var(--ink-soft); }
+.form-cta-note a { color: var(--gold); }
+
 /* ============================================================
    GALLERY
    ============================================================ */
