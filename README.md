@@ -9,18 +9,24 @@ crystalline-management/
 ├── styles.css        ← full design system
 ├── script.js         ← nav, scroll reveal, image fallbacks, forms
 ├── README.md         ← this file
-└── images/           ← drop your photos here (filenames below)
-    ├── charles.jpg
-    ├── ravioli.jpg
-    ├── dinner-table.jpg
-    ├── catering.jpg
-    ├── guests.jpg
-    ├── pasta-making.jpg
-    └── og-cover.jpg   ← social-share preview image (1200×630 recommended)
+└── images/           ← your photos (already installed & web-optimized)
+    ├── hero.jpg            ← hero banner (pasta + wine)
+    ├── chef.jpg           ← Charles tossing dough (About)
+    ├── ravioli.jpg        ← Ravioli Nights card
+    ├── linguine.jpg       ← Private Dinners card
+    ├── oven.jpg           ← Chef's Table card
+    ├── spread.jpg         ← Special Events card
+    ├── og-cover.jpg       ← social-share preview (1200×630)
+    └── g-*.jpg            ← the six gallery photos
 ```
 
-Until real photos are added, every image slot shows a tasteful labelled placeholder.
-The moment you drop a matching file into `/images/`, the site uses it automatically.
+Your photos are placed, renamed, and compressed for fast loading (progressive
+JPEG, ~80–300 KB each). Eleven are used on the page; four extras
+(`g-dessert.jpg`, `g-mushroom-pizza.jpg`, `g-pepperoni.jpg`, `g-meatball.jpg`)
+are kept in `/images` but left off the page — drop any of them into the gallery
+in `index.html` if you want them later. To swap an image, replace the file with
+one of the same name. If an image is ever missing, the site falls back to a
+tasteful labelled placeholder automatically.
 
 ---
 
