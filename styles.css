@@ -238,6 +238,9 @@ section[id], #top { scroll-margin-top: 88px; }
 .popup-copy .btn { margin-top: 1.8rem; }
 .popup-figure { aspect-ratio: 4 / 5; border-radius: var(--radius); overflow: hidden; position: relative; }
 .popup-figure img { width: 100%; height: 100%; object-fit: cover; }
+.popup-proof { margin-top: clamp(2.5rem, 6vw, 4rem); }
+.popup-proof img { width: 100%; height: auto; display: block; border-radius: var(--radius); }
+.popup-proof figcaption { margin-top: .8rem; font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; color: color-mix(in srgb, var(--paper) 58%, transparent); }
 
 /* ============================================================
    FORMS  (Waitlist + Contact)
