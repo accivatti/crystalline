@@ -207,6 +207,9 @@ section[id], #top { scroll-margin-top: 88px; }
   font-size: .85rem; font-weight: 600; letter-spacing: .02em; color: var(--ink);
   border: 1px solid var(--gold-soft); padding: .3rem .8rem; border-radius: 999px;
 }
+.service-link { margin-top: .9rem !important; }
+.service-link a { color: var(--gold); font-weight: 600; font-size: .92rem; text-decoration: none; }
+.service-link a:hover { text-decoration: underline; }
 
 /* ---------- About ---------- */
 .about-inner { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: start; }
@@ -251,6 +254,15 @@ section[id], #top { scroll-margin-top: 88px; }
 .waitlist-copy p, .contact-copy p { color: var(--ink-soft); margin-top: 1.1rem; max-width: 42ch; }
 .contact-details { margin-top: 1.6rem; font-style: normal; line-height: 1.7; }
 .contact-details a { color: var(--gold); }
+
+/* Email copy-to-clipboard feedback */
+.email { position: relative; cursor: pointer; }
+.email.copied::after {
+  content: "Copied to clipboard";
+  position: absolute; left: 0; top: 100%; margin-top: .35rem;
+  font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--gold); white-space: nowrap; pointer-events: none;
+}
 
 .card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(1.6rem, 3vw, 2.4rem); }
 .form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 1.2rem; }
