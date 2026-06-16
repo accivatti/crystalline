@@ -112,6 +112,7 @@ section[id], #top { scroll-margin-top: 88px; }
 
 .brand { display: flex; align-items: center; gap: .65rem; text-decoration: none; color: var(--ink); }
 .brand-mark { color: var(--gold); display: grid; place-items: center; }
+.brand-mark img { height: 30px; width: auto; display: block; }
 .brand-text { font-family: var(--display); font-size: 1.25rem; line-height: 1; display: flex; flex-direction: column; }
 .brand-sub {
   font-family: var(--sans); font-size: .62rem; letter-spacing: .26em;
@@ -274,6 +275,11 @@ section[id], #top { scroll-margin-top: 88px; }
    FOOTER
    ============================================================ */
 .site-footer { background: var(--espresso); color: var(--paper); padding-block: clamp(3rem, 6vw, 4.5rem) 1.5rem; }
+.footer-motto {
+  font-family: var(--display); font-style: italic; font-weight: 400;
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem); color: var(--gold-soft);
+  padding-bottom: clamp(2rem, 4vw, 2.75rem);
+}
 .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; padding-bottom: 2.5rem; border-bottom: 1px solid color-mix(in srgb, var(--paper) 14%, transparent); }
 .footer-name { font-family: var(--display); font-size: 1.5rem; }
 .footer-co { color: var(--gold-soft); margin-top: .2rem; }
