@@ -190,7 +190,7 @@
             Pricing stays simple and transparent: my time plus the real cost of ingredients and
             rentals, nothing hidden. Fully insured where it’s needed, especially when there’s a bar.
           </p>
-          <a class="btn btn-light reveal" href="https://docs.google.com/forms/d/e/1FAIpQLScsy7BRkCKx631ogM0QWTM4AVlfbI9v90E833TQBjMyxWCupQ/viewform" target="_blank" rel="noopener">Plan a Pop-Up</a>
+          <button type="button" class="btn btn-light reveal" data-tally-open="yP7p7X" data-tally-layout="modal" data-tally-width="720" data-tally-overlay="1">Plan a Pop-Up</button>
         </div>
         <figure class="popup-figure reveal">
           <img src="images/oven.jpg" alt="A pizza baking in the flame of a wood-fired oven" loading="lazy" data-ph="oven.jpg" />
@@ -351,12 +351,8 @@
         </div>
 
         <div class="form-cta card reveal">
-          <p class="form-cta-text">
-            Add your name and you’ll be among the first to hear when the next dinner or
-            workshop is set.
-          </p>
-          <a class="btn btn-solid" href="https://docs.google.com/forms/d/e/1FAIpQLScsy7BRkCKx631ogM0QWTM4AVlfbI9v90E833TQBjMyxWCupQ/viewform" target="_blank" rel="noopener">Join the Dinner List</a>
-          <p class="form-cta-note">Opens a short form. About a minute.</p>
+          <p class="form-cta-text">Add your name and you’ll be first to hear when the next table is set.</p>
+          <iframe class="tally-embed" data-tally-src="https://tally.so/embed/pbZ6v8?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="250" frameborder="0" marginheight="0" marginwidth="0" title="The Dinner List"></iframe>
         </div>
       </div>
     </section>
@@ -401,12 +397,8 @@
         </div>
 
         <div class="form-cta card reveal">
-          <p class="form-cta-text">
-            Not ready to set a date? Join the list and you’ll be the first to hear when
-            the next dinner or workshop opens.
-          </p>
-          <a class="btn btn-solid" href="https://docs.google.com/forms/d/e/1FAIpQLScsy7BRkCKx631ogM0QWTM4AVlfbI9v90E833TQBjMyxWCupQ/viewform" target="_blank" rel="noopener">Join the List</a>
-          <p class="form-cta-note">Takes about a minute.</p>
+          <p class="form-cta-text">Tell me about your event and I’ll be in touch within a day or two.</p>
+          <iframe class="tally-embed" data-tally-src="https://tally.so/embed/yP7p7X?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="420" frameborder="0" marginheight="0" marginwidth="0" title="Plan an Event"></iframe>
         </div>
       </div>
     </section>
@@ -438,5 +430,19 @@
   </footer>
 
   <script src="script.js"></script>
+  <!-- Tally embed loader (inline forms + popup triggers) -->
+  <script>
+    (function () {
+      var d = document, w = "https://tally.so/widgets/embed.js",
+        v = function () {
+          if (typeof Tally !== "undefined") { Tally.loadEmbeds(); }
+          else { d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) { e.src = e.dataset.tallySrc; }); }
+        };
+      if (typeof Tally !== "undefined") { v(); }
+      else if (d.querySelector('script[src="' + w + '"]') == null) {
+        var s = d.createElement("script"); s.src = w; s.onload = v; s.onerror = v; d.body.appendChild(s);
+      }
+    })();
+  </script>
 </body>
 </html>
