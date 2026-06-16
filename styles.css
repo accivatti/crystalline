@@ -288,6 +288,7 @@ section[id], #top { scroll-margin-top: 88px; }
 .form-cta-text { color: var(--ink-soft); font-size: 1.05rem; }
 .form-cta-note { font-size: .9rem; color: var(--ink-soft); }
 .form-cta-note a { color: var(--gold); }
+.form-cta .tally-embed { width: 100%; align-self: stretch; border: 0; display: block; min-height: 200px; background: transparent; }
 
 /* ============================================================
    GALLERY
