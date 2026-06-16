@@ -146,4 +146,20 @@
       status.className = "form-status field-full " + (cls || "");
     }
   });
+
+  /* ---------- Copy email to clipboard on click ----------
+     mailto only works when the visitor has a mail app set as default.
+     This copies the address (with a brief confirmation) so anyone can
+     paste it into webmail, while the mailto still fires where supported. */
+  document.querySelectorAll("a.email").forEach(function (a) {
+    a.addEventListener("click", function () {
+      var addr = a.getAttribute("data-email") || a.textContent;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(addr).then(function () {
+          a.classList.add("copied");
+          setTimeout(function () { a.classList.remove("copied"); }, 1800);
+        }).catch(function () {});
+      }
+    });
+  });
 })();
