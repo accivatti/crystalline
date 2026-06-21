@@ -1,0 +1,131 @@
+<!--
+  PORTFOLIO SECTION — Crystalline Management
+  Drop this <section> where you want it (recommended: after the gallery / before contact).
+  Paste the <style> block into styles.css (it is namespaced .pf-* so it won't collide).
+  Upload the five images in cmg-portfolio/images/ to your site's images/ folder.
+  Elements already carry class="reveal" so your existing scroll-reveal animates them.
+-->
+
+<style>
+/* ============ Portfolio section (namespaced .pf-*) ============ */
+.pf{
+  background:#F7F3EA;
+  padding:clamp(4.5rem,9vw,8rem) clamp(1.25rem,5vw,3rem);
+  color:#2A2620;
+}
+.pf-head{ max-width:62ch; margin:0 auto clamp(3rem,6vw,4.75rem); text-align:center; }
+.pf-eyebrow{
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  font-weight:600; font-size:.72rem; letter-spacing:.24em; text-transform:uppercase;
+  color:#A67F3C; margin:0 0 1rem;
+}
+.pf-title{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:480; font-size:clamp(2rem,4.6vw,3.15rem); line-height:1.07;
+  letter-spacing:-.005em; margin:0; color:#23201A;
+}
+.pf-title::after{
+  content:""; display:block; width:54px; height:2px; margin:1.5rem auto 0;
+  background:#C9A24B; opacity:.7;
+}
+.pf-lede{
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  font-weight:400; font-size:1.075rem; line-height:1.75; color:#4A443B;
+  margin:1.75rem auto 0; max-width:58ch;
+}
+.pf-travel{
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  font-weight:600; font-size:.74rem; letter-spacing:.18em; text-transform:uppercase;
+  color:#A67F3C; margin:1.4rem 0 0;
+}
+
+/* image bands -- widths vary to encode the story arc */
+.pf-band{ margin:clamp(2rem,4.5vw,3.5rem) auto 0; }
+.pf-band--wide{ max-width:1180px; }
+.pf-band--inset{ max-width:880px; }     /* dance floor: intimate */
+.pf-band img{
+  width:100%; height:auto; display:block; border-radius:16px;
+  box-shadow:0 22px 60px -28px rgba(42,32,20,.55);
+}
+.pf-cap{
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  font-weight:600; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase;
+  color:#9A7C3E; text-align:center; margin:1rem 0 0;
+}
+
+/* closing culinary detail -- magazine two-up */
+.pf-detail{
+  display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
+  gap:clamp(1.75rem,4vw,3.5rem); align-items:center;
+  max-width:1080px; margin:clamp(3rem,6vw,5rem) auto 0;
+}
+.pf-detail-fig{ margin:0; }
+.pf-detail-fig img{
+  width:100%; height:auto; display:block; border-radius:18px;
+  box-shadow:0 26px 64px -30px rgba(42,32,20,.6);
+}
+.pf-detail-cap{
+  font-family:'Fraunces',Georgia,serif; font-weight:460; font-style:italic;
+  font-size:clamp(1.35rem,2.4vw,1.75rem); line-height:1.25; color:#23201A;
+  margin:.7rem 0 0;
+}
+.pf-detail-note{
+  font-family:'Hanken Grotesk',system-ui,sans-serif; font-weight:400;
+  font-size:1rem; line-height:1.7; color:#4A443B; margin:1.1rem 0 0; max-width:34ch;
+}
+@media (max-width:760px){
+  .pf-detail{ grid-template-columns:1fr; }
+  .pf-detail-text{ order:2; }
+}
+
+/* reveal (matches the site's existing scroll-reveal; harmless if already defined) */
+.pf .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
+.pf .reveal.is-in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion:reduce){
+  .pf .reveal{ opacity:1; transform:none; transition:none; }
+}
+</style>
+
+  <section class="pf" id="portfolio" aria-labelledby="pf-title">
+    <div class="pf-head reveal">
+      <p class="pf-eyebrow">Portfolio</p>
+      <h2 class="pf-title" id="pf-title">Hospitality Execution for Events That Matter</h2>
+      <p class="pf-lede">A twenty-guest dinner by the lake and a hall full of guests in
+        black tie ask for the same thing: food that holds up and a room that runs calm.
+        Crystalline Management brings both, and travels to do it. Buffalo is the home base,
+        not the boundary.</p>
+      <p class="pf-travel">Based in Buffalo &middot; Available to travel</p>
+    </div>
+
+    <figure class="pf-band pf-band--wide reveal">
+      <img src="images/portfolio-01-nyc.jpg" alt="Black-tie crowd filling a grand hall under blue uplighting at a large-scale hospitality event" loading="lazy" />
+      <figcaption class="pf-cap">Large-scale hospitality event operations</figcaption>
+    </figure>
+
+    <figure class="pf-band pf-band--wide reveal">
+      <img src="images/portfolio-02-reception.jpg" alt="Wedding reception with guests seated at round tables beside a blue-lit bar" loading="lazy" />
+      <figcaption class="pf-cap">Wedding reception and guest experience</figcaption>
+    </figure>
+
+    <figure class="pf-band pf-band--inset reveal">
+      <img src="images/portfolio-03-dancefloor.jpg" alt="Bride and guests dancing on the floor in warm light" loading="lazy" />
+      <figcaption class="pf-cap">The part of the night people remember</figcaption>
+    </figure>
+
+    <figure class="pf-band pf-band--wide reveal">
+      <img src="images/portfolio-04-buffet.jpg" alt="Full buffet line of chafing dishes ready for service at a wedding" loading="lazy" />
+      <figcaption class="pf-cap">Wedding buffet service and catering execution</figcaption>
+    </figure>
+
+    <div class="pf-detail reveal">
+      <figure class="pf-detail-fig">
+        <img src="images/portfolio-05-porkchop.jpg" alt="Close-up of golden stuffed pork chops with herb stuffing in a serving pan" loading="lazy" />
+      </figure>
+      <div class="pf-detail-text">
+        <p class="pf-eyebrow">The detail</p>
+        <p class="pf-detail-cap">Locally sourced stuffed pork chops with herb stuffing</p>
+        <p class="pf-detail-note">Cut thick, stuffed by hand, and seasoned the morning of service.
+          Plated for the whole room and treated like it was going to one table.</p>
+      </div>
+    </div>
+  </section>
