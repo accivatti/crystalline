@@ -217,6 +217,12 @@ section[id], #top { scroll-margin-top: 88px; }
 .service-link { margin-top: .9rem !important; }
 .service-link a { color: var(--gold); font-weight: 600; font-size: .92rem; text-decoration: none; }
 .service-link a:hover { text-decoration: underline; }
+.workshops-lane {
+  border-top: 1px solid var(--line); margin-top: clamp(2rem, 4vw, 3rem);
+  padding-top: 1.6rem; display: flex; align-items: baseline; gap: 2rem; flex-wrap: wrap;
+}
+.workshops-lane h3 { font-family: var(--display); font-weight: 500; font-size: 1.4rem; white-space: nowrap; }
+.workshops-lane p { color: var(--ink-soft); max-width: 52ch; }
 
 /* ---------- About ---------- */
 .about-inner { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: start; }
@@ -362,6 +368,13 @@ section[id], #top { scroll-margin-top: 88px; }
 .g-item { position: relative; aspect-ratio: 1 / 1; overflow: hidden; border-radius: var(--radius); }
 .g-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
 .g-item:hover img { transform: scale(1.06); }
+.g-item figcaption {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(35, 32, 26, .68));
+  color: var(--paper); padding: 2rem .75rem .55rem;
+  font-family: var(--sans); font-size: .64rem; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; pointer-events: none;
+}
 
 /* ============================================================
    PORTFOLIO
@@ -385,6 +398,10 @@ section[id], #top { scroll-margin-top: 88px; }
 .pf-title::after {
   content: ""; display: block; width: 54px; height: 2px; margin: 1.5rem auto 0;
   background: #C9A24B; opacity: .7;
+}
+.pf-proof {
+  font-family: var(--sans); font-weight: 600; font-size: .88rem; letter-spacing: .03em;
+  color: #C9A24B; margin: .9rem auto 0; max-width: 54ch; text-align: center;
 }
 .pf-lede {
   font-family: var(--sans);
