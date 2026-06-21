@@ -1,0 +1,102 @@
+<!--
+  TESTIMONIALS SECTION - Charlie Accivatti
+  Paste the <section> into index.html (recommended: after the portfolio section).
+  Paste the <style> into styles.css (namespaced .tm-*, no collisions).
+  Elements carry class="reveal" to reuse the existing scroll-reveal.
+-->
+
+<style>
+/* ============ Testimonials section (namespaced .tm-*) ============ */
+.tm{
+  background:#23201A;            /* dark feature band, like the lead sections */
+  color:#F4EEDF;
+  padding:clamp(4.5rem,9vw,8rem) clamp(1.25rem,5vw,3rem);
+}
+.tm-head{ max-width:60ch; margin:0 auto clamp(2.75rem,6vw,4.25rem); text-align:center; }
+.tm-eyebrow{
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  font-weight:600; font-size:.72rem; letter-spacing:.24em; text-transform:uppercase;
+  color:#C9A24B; margin:0 0 1rem;
+}
+.tm-title{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:480; font-size:clamp(1.9rem,4.4vw,2.95rem); line-height:1.08;
+  letter-spacing:-.005em; margin:0; color:#F7F3EA;
+}
+.tm-source{
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  font-weight:400; font-size:.95rem; line-height:1.6; color:#C8BEA8;
+  margin:1.4rem auto 0; max-width:50ch;
+}
+.tm-grid{
+  max-width:1120px; margin:0 auto;
+  display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1rem,2.2vw,1.5rem);
+  align-items:start;
+}
+.tm-card{
+  background:rgba(247,243,234,.04);
+  border:1px solid rgba(201,162,75,.22);
+  border-radius:16px;
+  padding:clamp(1.5rem,2.4vw,2rem);
+}
+.tm-card--accent{
+  display:flex; flex-direction:column; justify-content:center;
+  background:rgba(201,162,75,.10);
+  border-color:rgba(201,162,75,.4);
+}
+.tm-stars{ color:#C9A24B; font-size:.85rem; letter-spacing:.18em; margin:0 0 1rem; }
+.tm-quote{
+  font-family:'Fraunces',Georgia,serif; font-weight:400; font-style:italic;
+  font-size:1.075rem; line-height:1.5; color:#F4EEDF; margin:0 0 1.25rem;
+}
+.tm-card--accent .tm-quote{
+  font-size:clamp(1.5rem,2.6vw,1.9rem); font-style:normal; font-weight:450;
+  line-height:1.2; margin-bottom:1rem; color:#F7F3EA;
+}
+.tm-name{
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  font-weight:600; font-size:.78rem; letter-spacing:.1em; text-transform:uppercase;
+  color:#C9A24B; margin:0;
+}
+@media (max-width:880px){ .tm-grid{ grid-template-columns:1fr 1fr; } }
+@media (max-width:560px){ .tm-grid{ grid-template-columns:1fr; } }
+
+.tm .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
+.tm .reveal.is-in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion:reduce){ .tm .reveal{ opacity:1; transform:none; transition:none; } }
+</style>
+
+  <section class="tm" id="testimonials" aria-labelledby="tm-title">
+    <div class="tm-head reveal">
+      <p class="tm-eyebrow">What guests say</p>
+      <h2 class="tm-title" id="tm-title">Reviews from the table</h2>
+      <p class="tm-source">From guests during my time leading the food program at
+        Alchemy Wine &amp; Beer in Hamburg, New York.</p>
+    </div>
+    <div class="tm-grid">
+      <figure class="tm-card reveal">
+        <p class="tm-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote class="tm-quote">Chef Charlie has elevated the food. Homemade pasta, pizza, and attention to detail. There is nothing like his food.</blockquote>
+        <figcaption class="tm-name">Melissa D.</figcaption>
+      </figure>
+      <figure class="tm-card reveal">
+        <p class="tm-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote class="tm-quote">If you want a New York City SoHo feeling experience, go to Alchemy in Hamburg. The food made by Chef Charlie Accivatti is absolutely delicious.</blockquote>
+        <figcaption class="tm-name">Lori S.</figcaption>
+      </figure>
+      <figure class="tm-card reveal">
+        <p class="tm-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote class="tm-quote">The pizza was the best I&rsquo;ve ever had. That&rsquo;s saying a lot as a Buffalo native with a thousand pizza options in the area.</blockquote>
+        <figcaption class="tm-name">David L.</figcaption>
+      </figure>
+      <figure class="tm-card tm-card--accent reveal">
+        <blockquote class="tm-quote">Best chef in Buffalo.</blockquote>
+        <figcaption class="tm-name">Matt D.</figcaption>
+      </figure>
+      <figure class="tm-card reveal">
+        <p class="tm-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote class="tm-quote">Everything Chef Charlie makes is top notch. If you have allergies or anything, he will work with you to create something special.</blockquote>
+        <figcaption class="tm-name">Sharon K.</figcaption>
+      </figure>
+      <figure class="tm-card reveal">
+        <p class="tm-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote class="tm-quote">Pasta and pizza made from scratch. The marinara had a great depth of flavor and the crust was light and tender. Fantastic.</blockquote>
+        <figcaption class="tm-name">sally w.</figcaption>
+      </figure>
+    </div>
+  </section>
