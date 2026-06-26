@@ -15,100 +15,120 @@ tenant_overlay:
   operating_contracts:
 
     brand_voice:
-      # TODO: Describe Crystalline's tone in 1–2 sentences.
-      # Example: "Warm, personal, and chef-driven. Reads like a host, not a vendor."
-      tone: "TODO: describe Crystalline's tone"
-      # TODO: 3–5 words that capture the brand voice.
-      # Example: [personal, generous, craft-forward, Italian-inspired, Buffalo-proud]
+      tone: >
+        Warm, polished, highly personal, and hospitality-native. Crystalline sounds
+        like an experienced operator who brings calm, taste, craft, and generosity
+        to events — never corporate, gimmicky, or generic.
       keywords:
-        - "TODO: keyword 1"
-        - "TODO: keyword 2"
-        - "TODO: keyword 3"
-      # TODO: Phrases or styles that feel off-brand.
-      # Example: [corporate-speak, overly formal salutations, generic catering copy]
+        - personal
+        - craft-forward
+        - elegant
+        - generous
+        - Buffalo-rooted
+        - operator-led
       what_to_avoid:
-        - "TODO: phrase or style to avoid"
+        - corporate catering clichés
+        - inflated luxury language
+        - salesy urgency
+        - fake "bespoke" fluff
+        - over-promising
+        - anything that sounds like a banquet hall brochure
 
     service_tiers:
-      # TODO: Describe each service tier. Use names from your website/menu.
       # No pricing here — pricing goes in tenant memory after review.
-      - id: popup-dinners
-        name: "TODO: e.g. Ravioli Nights"
-        description: "TODO: 1–2 sentence description of this experience"
-        typical_guest_count: "TODO: e.g. 20–40"
-      - id: private-dinners
-        name: "TODO: e.g. Private Dinners"
-        description: "TODO: 1–2 sentence description"
-        typical_guest_count: "TODO: e.g. 8–20"
-      - id: chefs-table
-        name: "TODO: e.g. Chef's Table"
-        description: "TODO: 1–2 sentence description"
-        typical_guest_count: "TODO: e.g. 6–10"
-      - id: special-events
-        name: "TODO: e.g. Special Events / Catering"
-        description: "TODO: 1–2 sentence description"
-        typical_guest_count: "TODO: e.g. 30–200"
+      - id: intimate-dinner
+        name: Intimate Dinner
+        description: >
+          Small private dinners, tasting-style meals, family celebrations, and
+          hosted gatherings with thoughtful food and personal service.
+        typical_guest_count: "8–24"
+      - id: private-event-catering
+        name: Private Event Catering
+        description: >
+          Cocktail parties, birthdays, showers, memorials, graduations, and
+          custom gatherings where Crystalline handles the food, setup support,
+          service flow, and cleanup expectations clearly.
+        typical_guest_count: "25–75"
+      - id: wedding-celebration-buffet
+        name: Wedding & Celebration Buffet
+        description: >
+          Warm, generous buffet-style service for weddings and larger
+          celebrations, with transparent pricing, practical logistics, and
+          operator-led execution.
+        typical_guest_count: "75–150"
+      - id: culinary-consulting-event-rescue
+        name: Culinary Consulting & Event Rescue
+        description: >
+          Menu development, staffing support, restaurant/event troubleshooting,
+          vendor coordination, and high-pressure hospitality problem solving.
+        typical_guest_count: project-based
 
     booking_process:
-      # TODO: List your booking steps in order.
-      # Example: [inquiry received, consultation call, proposal sent, deposit collected, event confirmed]
       steps:
-        - "TODO: step 1 (e.g. inquiry received via website or referral)"
-        - "TODO: step 2 (e.g. qualification call or message exchange)"
-        - "TODO: step 3 (e.g. proposal or quote sent)"
-        - "TODO: step 4 (e.g. deposit collected, date held)"
-        - "TODO: step 5 (e.g. event confirmed, logistics finalized)"
+        - Receive inquiry
+        - Confirm event date, location, guest count, occasion, service style, and budget range
+        - Identify fit, constraints, and any disqualifiers
+        - Send thoughtful follow-up with next-step questions or proposed call
+        - Draft scope and pricing range
+        - Confirm menu direction, labor needs, rentals/serviceware, travel, and timeline
+        - Send written proposal or invoice
+        - Collect deposit or written confirmation
+        - Finalize menu, count, schedule, and logistics
+        - Execute event
+        - Send recap, thanks, and follow-up/social proof request where appropriate
 
     response_time:
-      # TODO: How quickly do you typically respond to new inquiries?
-      # Example: "replies within 24 business hours"
-      sla: "TODO: e.g. replies within 24 business hours"
+      sla: >
+        Reply to new qualified inquiries within 24 hours when possible. For
+        urgent events inside 14 days, reply same day when possible.
 
     inquiry_qualification:
-      # TODO: Key questions you want answered before committing to a proposal.
-      # Example: [event type, guest count, date, venue, dietary restrictions, budget signal]
       key_questions:
-        - "TODO: question 1 (e.g. What type of event?)"
-        - "TODO: question 2 (e.g. How many guests?)"
-        - "TODO: question 3 (e.g. What date or date range?)"
-        - "TODO: question 4 (e.g. Indoor or outdoor venue?)"
-        - "TODO: question 5 (e.g. Any dietary restrictions?)"
-        - "TODO: question 6 (e.g. Budget range or flexibility?)"
-      # TODO: Are there event types or sizes you do not take?
-      # Example: [events under 10 guests, same-day requests, venue outside Buffalo metro]
+        - What is the event date, time, and location?
+        - What is the occasion?
+        - How many guests are expected?
+        - "What service style: buffet, family-style, plated, grazing, pizza/on-site cooking, or drop-off?"
+        - Is there a target budget or range?
+        - Are there dietary restrictions or strong menu preferences?
+        - What equipment, kitchen access, tables, rentals, or serviceware are available on-site?
+        - Do you need staffing, setup, cleanup, or full-service support?
+        - Is alcohol involved, and who is responsible for bar service?
+        - What would make the event feel successful to you?
       disqualifiers:
-        - "TODO: e.g. events under X guests"
-        - "TODO: e.g. bookings under X weeks out"
+        - Events requiring full licensed bar service unless handled by a separate qualified provider
+        - Events with unclear scope and no decision-maker
+        - Very low-budget requests that do not support food quality, labor, and logistics
+        - High-risk last-minute events without adequate planning access
+        - Requests requiring permits, insurance, equipment, or staffing beyond what can be responsibly provided
+        - Events where expectations are inconsistent with the stated budget
 
     social_proof_sources:
-      # TODO: Where do you have testimonials or past event content you'd want reused?
-      # Use URLs or file paths — no login credentials.
-      # Example: [website testimonials section, approved Instagram posts, past recap files]
       approved_sources:
         - url: "https://crystallinemgmt.com"
           description: "Public website — testimonials and gallery sections are approved for reuse"
-        - "TODO: add other approved sources (Instagram handle, review platform URLs, etc.)"
+        - handle: "@accivatti"
+          platform: Instagram
+          description: "Public Instagram — approved event and food content may be referenced"
 
   source_pointers:
     # Pointers to tools and systems — never literal credentials.
-    # Use env var names (env:VAR_NAME), vault paths, or a tool surface name.
+    # Replace placeholder values with actual env var names when tools are set up.
     website_url: "https://crystallinemgmt.com"
     contact_email: "hello@crystallinemgmt.com"
-    # TODO: Fill in pointers for tools you actually use. Delete lines for tools you don't use.
-    crm: "TODO: env:CRYSTALLINE_CRM_URL or vault path, e.g. for HubSpot/Airtable"
-    booking_form: "TODO: env:CRYSTALLINE_BOOKING_FORM_URL or placeholder"
-    email_tool: "TODO: env:CRYSTALLINE_EMAIL_TOOL or tool surface name"
-    instagram: "TODO: @your_handle (public handle only — no password)"
-    calendar_tool: "TODO: env:CRYSTALLINE_CALENDAR_TOOL or surface name"
+    instagram: "@accivatti"
+    crm: "placeholder — replace with env:CRYSTALLINE_CRM_URL when CRM is configured"
+    booking_form: "placeholder — replace with env:CRYSTALLINE_BOOKING_FORM_URL when form is set up"
+    email_tool: "placeholder — replace with env:CRYSTALLINE_EMAIL_TOOL when email tool is configured"
+    calendar_tool: "placeholder — replace with env:CRYSTALLINE_CALENDAR_TOOL when calendar is configured"
+    invoice_tool: "placeholder — replace with env:CRYSTALLINE_INVOICE_TOOL when invoicing is set up"
+    photo_library: "placeholder — replace with path or URL when photo library is organized"
 
   runtime_bindings:
-    # Map abstract surfaces to concrete runtime or tool names.
-    # No credentials here — just surface names or env var pointers.
-    # TODO: Fill in which runtime or tool handles each surface.
-    message_draft: "TODO: e.g. Claude Code, or your preferred AI assistant"
-    lead_qualification: "TODO: e.g. same runtime as message_draft"
-    proposal_outline: "TODO: e.g. same runtime"
-    memory_patch: "propose-only; owner reviews before any write"
+    # Update these when you settle on specific tools for each surface.
+    message_draft: "Claude Code (or preferred AI assistant)"
+    lead_qualification: "Claude Code (or preferred AI assistant)"
+    proposal_outline: "Claude Code (or preferred AI assistant)"
+    memory_patch: "propose-only; Charlie reviews before any write"
 
   evidence_contract:
     scope: catering and event inquiries for Crystalline Management
@@ -117,7 +137,8 @@ tenant_overlay:
     approved_read_sources:
       - "https://crystallinemgmt.com (public website)"
       - "agents/state/memory/crystalline-management-hospitality-marketing.tenant-memory.md"
-      - "TODO: add paths to past event recap files or approved reference documents"
+      - "https://www.instagram.com/accivatti (public Instagram — approved posts only)"
+      - "placeholder — add paths to past event recap files when available"
     approval_receipts_required_for:
       - client message send
       - booking confirmation
@@ -126,9 +147,8 @@ tenant_overlay:
       - memory promotion beyond overlay
 
   approval_owners:
-    primary: "Charles Accivatti"
-    # TODO: Add a fallback if Charles is unavailable.
-    fallback: "TODO: designated alternate name or 'hold until owner available'"
+    primary: "Charlie Accivatti"
+    fallback: "Annawade Accivatti — basic scheduling and availability only; Charlie must approve pricing, scope, and commitments"
 
   overlay_memory_rule:
     promote_to_tenant_memory_after_review:

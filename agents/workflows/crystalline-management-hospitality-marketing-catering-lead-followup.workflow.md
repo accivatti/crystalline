@@ -24,7 +24,9 @@ workflow_contract:
         venue type, dietary flags, and any budget signal. Flag missing key
         questions from the overlay's inquiry_qualification.key_questions list.
         Do not invent facts. Do not read raw email threads or CRM exports.
-        # TODO: Add any Crystalline-specific qualification notes here.
+        Flag any inquiry where budget, guest count, location, timing, staffing
+        needs, or alcohol responsibility are unclear. Do not reject aggressively —
+        suggest a smaller scope, drop-off option, or referral when appropriate.
 
     - step: draft_followup_message
       mode: propose
@@ -37,9 +39,10 @@ workflow_contract:
         name if known, reference their specific event type, confirm interest
         in connecting, and propose a next step (consultation call, site visit,
         or follow-up questions). Keep it concise — not a proposal yet.
-        # TODO: Add any signature format or sign-off preference.
-        # TODO: Add preferred call-to-action (e.g., "Would love to hop on a
-        # quick call — I'm generally available Tues–Thurs afternoons.").
+        Default CTA: "Send me the date, guest count, location, and ideal service
+        style, and I'll let you know the cleanest path forward." For warmer
+        leads, suggest a short call instead.
+        Sign-off: "Warmly, / Charlie / Crystalline Management"
 
     - step: outline_proposal
       mode: propose
@@ -53,8 +56,9 @@ workflow_contract:
         and open questions. This is a draft skeleton for Charles to review
         and flesh out — not a final quote. Do not include specific pricing
         unless verified facts exist in tenant memory.
-        # TODO: Add any standard package or starting-point language you
-        # always include in proposals.
+        Separate food, labor/service, travel/logistics, rentals/serviceware,
+        and optional add-ons whenever possible. Use transparent language when
+        discounts are applied. Avoid hiding labor inside food pricing.
 
     - step: readback_and_route
       mode: propose
