@@ -44,7 +44,12 @@ workflow_contract:
         get the missing qualification answers, not to sell. Keep it short.
         Default CTA: "Send me those and I'll let you know the cleanest path
         forward." For warmer leads, suggest a short call instead.
-        Sign-off: "Warmly, / Charlie / Crystalline Management"
+        Closing format: indent "Warmly," on its own line.  Leave one
+        full blank line after it.  On the next line, indent "Charlie"
+        one tab further than "Warmly,".  On the line immediately below,
+        at the same indent as "Charlie", write "Crystalline Management".
+        Use two spaces after every period throughout the message.  Indent
+        the first line of each new paragraph.
         Before presenting the draft, apply the review_checklist from
         overlay.operating_contracts.writing_style: Does this sound like
         Charlie? Would Charlie actually say this aloud? Is anything

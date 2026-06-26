@@ -56,11 +56,19 @@ tenant_overlay:
         - Never use em dashes
         - Prefer commas or separate sentences
         - Avoid semicolons unless they improve clarity
+        - Two spaces after every period
       structure:
         - Short paragraphs
+        - Indent the first line of each new paragraph
         - Natural contractions
         - Specific details over adjectives
         - Ask useful questions before making assumptions
+        - >
+          Closing format: indent the salutation (e.g., "Warmly,") on its
+          own line.  Leave one full blank line.  Place the name on the
+          next line, indented one tab further than the salutation.  Place
+          "Crystalline Management" on the line immediately below the name,
+          at the same indent as the name.
       avoid:
         - Marketing agency language
         - Corporate jargon
