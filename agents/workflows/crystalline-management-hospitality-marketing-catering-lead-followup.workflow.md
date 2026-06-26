@@ -45,6 +45,13 @@ workflow_contract:
         Default CTA: "Send me those and I'll let you know the cleanest path
         forward." For warmer leads, suggest a short call instead.
         Sign-off: "Warmly, / Charlie / Crystalline Management"
+        Before presenting the draft, apply the review_checklist from
+        overlay.operating_contracts.writing_style: Does this sound like
+        Charlie? Would Charlie actually say this aloud? Is anything
+        exaggerated? Is anything unnecessary? Rewrite until every answer
+        is yes. Remove all em dashes, AI filler, forbidden phrases, and
+        marketing clichés before output. Prefer natural conversational
+        language over polished marketing language.
 
     - step: outline_proposal
       mode: propose
@@ -72,6 +79,13 @@ workflow_contract:
         drafted, evidence sources cited, what is being proposed for approval,
         and the reusable learning verdict. Route any stable new pattern as a
         GEB delta proposal. Do not persist anything without owner review.
+        After the readback, critique the draft message against
+        overlay.operating_contracts.writing_style.review_checklist.
+        Identify anything that sounded robotic or inconsistent with
+        Charlie's voice. For each issue, recommend a specific improvement
+        to overlay.md, workflow.md, or tenant-memory.md and explain why
+        it improves the system. Ask for approval before making any
+        structural change.
 
   apply_lab:
     live_action_risk_class: high
