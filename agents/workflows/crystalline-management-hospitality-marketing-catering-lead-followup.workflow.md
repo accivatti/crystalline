@@ -25,8 +25,8 @@ workflow_contract:
         questions from the overlay's inquiry_qualification.key_questions list.
         Do not invent facts. Do not read raw email threads or CRM exports.
         Flag any inquiry where budget, guest count, location, timing, staffing
-        needs, or alcohol responsibility are unclear. Do not reject aggressively —
-        suggest a smaller scope, drop-off option, or referral when appropriate.
+        needs, or alcohol responsibility are unclear. Do not reject aggressively.
+        Suggest a smaller scope, drop-off option, or referral when appropriate.
 
     - step: draft_followup_message
       mode: propose
@@ -34,14 +34,16 @@ workflow_contract:
         - message_draft
       expected_output: draft_followup_message
       guidance: >
-        Draft a warm, personal follow-up message in Crystalline brand voice
-        (per overlay.operating_contracts.brand_voice). Address the lead by
-        name if known, reference their specific event type, confirm interest
-        in connecting, and propose a next step (consultation call, site visit,
-        or follow-up questions). Keep it concise — not a proposal yet.
-        Default CTA: "Send me the date, guest count, location, and ideal service
-        style, and I'll let you know the cleanest path forward." For warmer
-        leads, suggest a short call instead.
+        Draft a follow-up message in Charlie's voice (see
+        overlay.operating_contracts.brand_voice). Open with something specific
+        from the brief: the occasion, guest count, or venue. Do not open with
+        a generic compliment. Sound like you read it, not like you are
+        responding to a form. Use short paragraphs and natural contractions.
+        Do not use em dashes. Do not use words like elevate, bespoke,
+        unforgettable, seamless, or curated. The goal of this message is to
+        get the missing qualification answers, not to sell. Keep it short.
+        Default CTA: "Send me those and I'll let you know the cleanest path
+        forward." For warmer leads, suggest a short call instead.
         Sign-off: "Warmly, / Charlie / Crystalline Management"
 
     - step: outline_proposal
@@ -51,14 +53,14 @@ workflow_contract:
       expected_output: proposal_outline
       guidance: >
         Produce a lightweight proposal outline: event type, proposed service
-        tier, guest count range, suggested menu style (based on past event
-        evidence and website copy — no invented specifics), logistics notes,
-        and open questions. This is a draft skeleton for Charles to review
-        and flesh out — not a final quote. Do not include specific pricing
-        unless verified facts exist in tenant memory.
-        Separate food, labor/service, travel/logistics, rentals/serviceware,
-        and optional add-ons whenever possible. Use transparent language when
-        discounts are applied. Avoid hiding labor inside food pricing.
+        tier, guest count range, suggested menu style (based on approved
+        evidence sources only, no invented specifics), logistics notes, and
+        open questions. This is a draft skeleton for Charlie to review and
+        flesh out. It is not a quote. Do not include specific pricing unless
+        verified facts exist in tenant memory. Separate food, labor/service,
+        travel/logistics, rentals/serviceware, and optional add-ons. Do not
+        hide labor inside food pricing. Use transparent language if discounts
+        are applied.
 
     - step: readback_and_route
       mode: propose
@@ -84,7 +86,7 @@ workflow_contract:
     required:
       - inquiry brief or summary (no raw transcripts or raw CRM exports)
       - event type and requested date
-      - contact identifier (initials or placeholder — no full PII)
+      - contact identifier (initials or placeholder, no full PII)
       - draft message path or inline text
       - proposal outline path or inline text
       - evidence sources cited (website copy, past recaps, approved testimonials)

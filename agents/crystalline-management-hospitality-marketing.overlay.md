@@ -16,23 +16,29 @@ tenant_overlay:
 
     brand_voice:
       tone: >
-        Warm, polished, highly personal, and hospitality-native. Crystalline sounds
-        like an experienced operator who brings calm, taste, craft, and generosity
-        to events — never corporate, gimmicky, or generic.
+        Warm, highly personal, and hospitality-native. Sounds like an experienced
+        operator who brings calm, taste, craft, and generosity to events. Never
+        corporate, gimmicky, or generic.
       keywords:
         - personal
         - craft-forward
-        - elegant
         - generous
+        - honest
         - Buffalo-rooted
         - operator-led
       what_to_avoid:
         - corporate catering clichés
-        - inflated luxury language
+        - inflated luxury language ("elegant dining experience", "world-class", "premier")
         - salesy urgency
         - fake "bespoke" fluff
         - over-promising
         - anything that sounds like a banquet hall brochure
+        - em dashes (use commas or separate sentences instead)
+        - AI filler: elevate, curated, unforgettable, seamless, bespoke, thrilled,
+          delighted, excited to, look no further
+        - generic openers ("What a lovely occasion", "Thank you for reaching out")
+        - unnecessary adjectives
+        - semicolons unless unavoidable
 
     service_tiers:
       # No pricing here — pricing goes in tenant memory after review.
@@ -105,10 +111,10 @@ tenant_overlay:
     social_proof_sources:
       approved_sources:
         - url: "https://crystallinemgmt.com"
-          description: "Public website — testimonials and gallery sections are approved for reuse"
+          description: "Public website. Testimonials and gallery sections are approved for reuse."
         - handle: "@accivatti"
           platform: Instagram
-          description: "Public Instagram — approved event and food content may be referenced"
+          description: "Public Instagram. Approved event and food content may be referenced."
 
   source_pointers:
     # Pointers to tools and systems — never literal credentials.
@@ -137,8 +143,8 @@ tenant_overlay:
     approved_read_sources:
       - "https://crystallinemgmt.com (public website)"
       - "agents/state/memory/crystalline-management-hospitality-marketing.tenant-memory.md"
-      - "https://www.instagram.com/accivatti (public Instagram — approved posts only)"
-      - "placeholder — add paths to past event recap files when available"
+      - "https://www.instagram.com/accivatti (public Instagram, approved posts only)"
+      - "placeholder: add paths to past event recap files when available"
     approval_receipts_required_for:
       - client message send
       - booking confirmation
@@ -148,11 +154,11 @@ tenant_overlay:
 
   approval_owners:
     primary: "Charlie Accivatti"
-    fallback: "Annawade Accivatti — basic scheduling and availability only; Charlie must approve pricing, scope, and commitments"
+    fallback: "Annawade Accivatti for basic scheduling and availability only. Charlie must approve pricing, scope, and commitments."
 
   overlay_memory_rule:
     promote_to_tenant_memory_after_review:
-      - stable service facts verified by Charles
+      - stable service facts verified by Charlie
       - confirmed pricing or event minimums (after owner sign-off)
       - repeated booking process steps with evidence
     promote_to_overlay_after_review:
