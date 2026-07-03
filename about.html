@@ -234,15 +234,11 @@
           <span class="nav-bars" aria-hidden="true"></span>
         </button>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="/#popup">Pop-Up Pizza</a></li>
-          <li><a href="/#services">Services</a></li>
           <li><a href="/about.html" aria-current="page">About</a></li>
-          <li><a href="/#experiences">Experiences</a></li>
-          <li><a href="/#gallery">Gallery</a></li>
-          <li><a href="/#portfolio">Portfolio</a></li>
-          <li><a href="/#testimonials">Reviews</a></li>
+          <li><a href="/#services">Services</a></li>
           <li><a href="/weddings.html">Weddings</a></li>
-          <li><a class="nav-cta" href="/#contact">See If We're a Fit</a></li>
+          <li><a href="/#testimonials">Reviews</a></li>
+          <li><a class="nav-cta" data-tally-open="yP7p7X" data-tally-layout="modal" data-tally-width="720" data-tally-overlay="1" href="#">Start Planning</a></li>
         </ul>
       </nav>
     </div>
@@ -393,7 +389,7 @@
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="wrap">
-      <p class="footer-tagline">Gather around the table.</p>
+      <p class="footer-motto">Gather around the table.</p>
     </div>
     <div class="wrap footer-inner">
       <div class="footer-brand">
@@ -420,5 +416,18 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    (function () {
+      var d = document, w = "https://tally.so/widgets/embed.js",
+        v = function () {
+          if (typeof Tally !== "undefined") { Tally.loadEmbeds(); }
+          else { d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) { e.src = e.dataset.tallySrc; }); }
+        };
+      if (typeof Tally !== "undefined") { v(); }
+      else if (d.querySelector('script[src="' + w + '"]') == null) {
+        var s = d.createElement("script"); s.src = w; s.onload = v; s.onerror = v; d.body.appendChild(s);
+      }
+    })();
+  </script>
 </body>
 </html>

@@ -465,6 +465,40 @@ section[id], #top { scroll-margin-top: 88px; }
 .footer-legal p { font-size: .82rem; color: color-mix(in srgb, var(--paper) 55%, transparent); }
 
 /* ============================================================
+   AUTHORITY STRIP
+   ============================================================ */
+.auth-strip {
+  background: var(--cream);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 1.6rem clamp(1.25rem, 5vw, 3rem);
+}
+.auth-strip-inner {
+  max-width: var(--wrap); margin: 0 auto;
+  display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: center; gap: .75rem 3.5rem;
+}
+.auth-item { text-align: center; }
+.auth-item-label {
+  font-family: var(--sans); font-size: .62rem; font-weight: 600;
+  letter-spacing: .22em; text-transform: uppercase;
+  color: var(--gold); margin: 0 0 .3rem;
+}
+.auth-item-name {
+  font-family: var(--display); font-weight: 400; font-size: 1rem;
+  color: var(--ink); margin: 0; line-height: 1.3;
+}
+.auth-dot {
+  width: 4px; height: 4px; border-radius: 50%;
+  background: var(--gold-soft); opacity: .45; flex-shrink: 0;
+  display: block;
+}
+@media (max-width: 640px) {
+  .auth-dot { display: none; }
+  .auth-strip-inner { gap: 1.5rem 2rem; }
+}
+
+/* ============================================================
    IMAGE PLACEHOLDERS (graceful before real photos arrive)
    ============================================================ */
 .img-ph {
@@ -507,7 +541,7 @@ section[id], #top { scroll-margin-top: 88px; }
   .about-figure { position: static; aspect-ratio: 16 / 10; max-height: 460px; }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .nav-toggle { display: block; }
   .nav-menu {
     position: fixed; inset: 72px 0 auto 0; flex-direction: column; gap: 0; align-items: stretch;
@@ -521,7 +555,9 @@ section[id], #top { scroll-margin-top: 88px; }
   .nav-menu a { display: block; padding: 1rem 0; font-size: 1.05rem; }
   .nav-cta { text-align: center; margin-top: .8rem; padding: .9rem 1.1rem; }
   .nav-menu a:not(.nav-cta)::after { display: none; }
+}
 
+@media (max-width: 760px) {
   .service-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .popup-inner { grid-template-columns: 1fr; }
   .popup-figure { aspect-ratio: 16 / 11; }
