@@ -503,6 +503,8 @@ section[id], #top { scroll-margin-top: 88px; }
 .footer-links a:hover { color: var(--gold-soft); }
 .footer-legal { padding-top: 1.5rem; }
 .footer-legal p { font-size: .82rem; color: color-mix(in srgb, var(--paper) 55%, transparent); }
+.footer-legal a { color: color-mix(in srgb, var(--paper) 82%, transparent); text-decoration: none; }
+.footer-legal a:hover { color: var(--gold-soft); }
 
 /* ============================================================
    AUTHORITY STRIP
