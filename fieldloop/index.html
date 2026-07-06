@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============ SEO ============ -->
+  <title>FieldLoop — Operational Intelligence | Charlie Accivatti</title>
+  <meta name="description" content="FieldLoop is an operational intelligence initiative from hospitality operator Charlie Accivatti, exploring how the daily activity of an operation reveals recurring patterns and emerging problems before they become expensive." />
+  <meta name="author" content="Charlie Accivatti" />
+  <link rel="canonical" href="https://crystallinemgmt.com/fieldloop" />
+  <meta name="theme-color" content="#F7F3EA" />
+
+  <!-- ============ Favicon ============ -->
+  <link rel="icon" href="/images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+  <!-- ============ Open Graph ============ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Charlie Accivatti" />
+  <meta property="og:title" content="FieldLoop — Operational Intelligence" />
+  <meta property="og:description" content="FieldLoop is an operational intelligence initiative from hospitality operator Charlie Accivatti, exploring how the daily activity of an operation reveals recurring patterns and emerging problems before they become expensive." />
+  <meta property="og:url" content="https://crystallinemgmt.com/fieldloop" />
+  <meta property="og:image" content="https://crystallinemgmt.com/images/og-cover.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ============ Twitter ============ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FieldLoop — Operational Intelligence" />
+  <meta name="twitter:description" content="FieldLoop is an operational intelligence initiative from hospitality operator Charlie Accivatti, exploring how the daily activity of an operation reveals recurring patterns and emerging problems before they become expensive." />
+  <meta name="twitter:image" content="https://crystallinemgmt.com/images/og-cover.jpg" />
+
+  <!-- ============ Fonts ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- ============ Structured Data ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FieldLoop — Operational Intelligence",
+    "description": "FieldLoop is an operational intelligence initiative from hospitality operator Charlie Accivatti, exploring how the daily activity of an operation reveals recurring patterns and emerging problems before they become expensive.",
+    "url": "https://crystallinemgmt.com/fieldloop",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Charlie Accivatti",
+      "url": "https://crystallinemgmt.com"
+    }
+  }
+  </script>
+
+  <style>
+    /* ===== FieldLoop page - namespaced .fl-* ===== */
+
+    .fl-hero {
+      background: var(--espresso);
+      color: var(--paper);
+      padding: clamp(5rem,10vw,9rem) clamp(1.25rem,5vw,3rem) clamp(4rem,8vw,7rem);
+      text-align: center;
+    }
+    .fl-hero-inner { max-width: 760px; margin: 0 auto; }
+    .fl-hero-title {
+      font-family: var(--display); font-weight: 400; font-optical-sizing: auto;
+      font-size: clamp(2.5rem,6.5vw,4.25rem); line-height: 1.05;
+      letter-spacing: -.01em; margin: 0 0 1.5rem; color: var(--paper);
+    }
+    .fl-hero-sub {
+      font-family: var(--display); font-style: italic; font-weight: 400;
+      font-size: clamp(1.15rem,2.4vw,1.5rem); line-height: 1.5;
+      color: var(--gold-soft); max-width: 46ch; margin: 0 auto 1.75rem;
+    }
+    .fl-hero-body {
+      font-family: var(--sans); font-size: 1.05rem; line-height: 1.75;
+      color: color-mix(in srgb, var(--paper) 72%, transparent);
+      max-width: 52ch; margin: 0 auto 2.5rem;
+    }
+    .fl-hero .btn { margin-inline: auto; }
+
+    .fl-section {
+      padding: clamp(4rem,8vw,7rem) clamp(1.25rem,5vw,3rem);
+    }
+    .fl-section--cream { background: var(--cream); }
+    .fl-section--dark { background: var(--espresso); color: var(--paper); }
+
+    .fl-inner { max-width: 720px; margin: 0 auto; }
+
+    .fl-label {
+      font-family: var(--sans); font-weight: 600; font-size: .72rem;
+      letter-spacing: .22em; text-transform: uppercase;
+      color: var(--gold); margin: 0 0 1rem;
+    }
+    .fl-section--dark .fl-label { color: var(--gold-soft); }
+
+    .fl-h2 {
+      font-family: var(--display); font-weight: 480;
+      font-size: clamp(1.75rem,3.8vw,2.6rem); line-height: 1.1;
+      letter-spacing: -.005em; margin: 0 0 1.75rem; color: var(--ink);
+    }
+    .fl-section--dark .fl-h2 { color: var(--paper); }
+
+    .fl-body {
+      font-family: var(--sans); font-size: 1.075rem; line-height: 1.78; color: var(--ink-soft);
+    }
+    .fl-body p + p { margin-top: 1.25rem; }
+    .fl-section--dark .fl-body { color: color-mix(in srgb, var(--paper) 72%, transparent); }
+    .fl-intro { font-size: 1.1rem; margin-bottom: 1.75rem; }
+
+    /* Signal / question list */
+    .fl-list {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: .1rem 2rem; list-style: none; padding: 0; margin: 0 0 1.75rem;
+    }
+    .fl-list li {
+      border-top: 1px solid var(--line); padding: 1rem 0;
+      font-family: var(--sans); font-size: 1.02rem; color: var(--ink);
+    }
+    .fl-section--dark .fl-list li { border-top-color: rgba(247,243,234,.16); color: var(--paper); }
+
+    .fl-questions {
+      list-style: none; padding: 0; margin: 0 0 1.75rem;
+    }
+    .fl-questions li {
+      border-top: 1px solid var(--line); padding: 1.2rem 0;
+      font-family: var(--display); font-size: 1.15rem; line-height: 1.5; color: var(--ink);
+    }
+    .fl-section--dark .fl-questions li { border-top-color: rgba(247,243,234,.16); color: var(--paper); }
+    .fl-questions li:last-child, .fl-list li:last-child { border-bottom: 1px solid transparent; }
+
+    /* Invitation / CTA band */
+    .fl-cta {
+      background: var(--espresso); color: var(--paper);
+      text-align: center;
+      padding: clamp(4.5rem,9vw,8rem) clamp(1.25rem,5vw,3rem);
+    }
+    .fl-cta-inner { max-width: 640px; margin: 0 auto; }
+    .fl-cta-title {
+      font-family: var(--display); font-weight: 400;
+      font-size: clamp(1.8rem,4vw,2.75rem); margin: 0 0 1.5rem; color: var(--paper);
+    }
+    .fl-cta p {
+      font-family: var(--sans); font-size: 1.05rem;
+      color: color-mix(in srgb, var(--paper) 72%, transparent);
+      margin: 0 auto 1.25rem; line-height: 1.7;
+    }
+    .fl-cta p + p { margin-top: 1.25rem; margin-bottom: 2.25rem; }
+
+    @media (max-width: 640px) {
+      .fl-list { grid-template-columns: 1fr; }
+    }
+
+    /* Footer FieldLoop link - matches .footer-links a treatment */
+    .footer-legal a {
+      color: color-mix(in srgb, var(--paper) 82%, transparent);
+      text-decoration: none;
+    }
+    .footer-legal a:hover { color: var(--gold-soft); }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="Charlie Accivatti, home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="/images/ca-monogram.png" alt="" />
+        </span>
+        <span class="brand-text">Charlie Accivatti<span class="brand-sub">Buffalo · Est. 1978</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Menu</span>
+          <span class="nav-bars" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/weddings.html">Weddings</a></li>
+          <li><a href="/#testimonials">Reviews</a></li>
+          <li><a class="nav-cta" href="/#contact">See If We're a Fit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ SECTION 1: HERO ============ -->
+    <section class="fl-hero" aria-labelledby="fl-hero-title">
+      <div class="fl-hero-inner">
+        <h1 class="fl-hero-title reveal" id="fl-hero-title">Making Operations Visible</h1>
+        <p class="fl-hero-sub reveal">FieldLoop is an operational intelligence initiative exploring how daily operational activity can be organized into meaningful insight.</p>
+        <p class="fl-hero-body reveal">
+          Operators already collect an enormous amount of information. Schedules, checklists,
+          vendor deliveries, maintenance requests, shift notes, inventory counts. Each one
+          carries a signal. The challenge is seeing what those signals reveal when they are
+          viewed together.
+        </p>
+        <a class="btn btn-light reveal" href="#fl-invite">Join the Conversation</a>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 2: THE PROBLEM ============ -->
+    <section class="fl-section" aria-labelledby="fl-problem-title">
+      <div class="fl-inner">
+        <p class="fl-label reveal">The Problem</p>
+        <h2 class="fl-h2 reveal" id="fl-problem-title">The Problem Is Not Lack of Activity</h2>
+        <div class="fl-body reveal">
+          <p>Walk into any well-run operation and you will find systems everywhere. A POS full of transactions. A schedule that took hours to build. Checklists signed off every night. Invoices from a dozen vendors. Text threads where the real problems get solved at six in the morning.</p>
+          <p>None of that is the problem. The problem is that each system only sees itself. The walk-in that fails every August lives in the maintenance log. The prep list that falls apart whenever one particular cook is out lives in a manager's head. The vendor whose short deliveries quietly cost a point of food cost lives in a stack of invoices nobody reconciles against the order.</p>
+          <p>Individually these are annoyances. Connected, they are a picture of where the operation actually leaks time and money. Most operators never get to see that picture.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 3: ORIGIN ============ -->
+    <section class="fl-section fl-section--cream" aria-labelledby="fl-origin-title">
+      <div class="fl-inner">
+        <p class="fl-label reveal">Origin</p>
+        <h2 class="fl-h2 reveal" id="fl-origin-title">Why FieldLoop Exists</h2>
+        <div class="fl-body reveal">
+          <p>Charlie Accivatti has spent more than thirty years inside operations. Opening restaurants. Running high-volume catering in New York. Working the kitchen and the dining room in the same shift. Building a food program in a small-town wine bar. Teaching the science of cooking at Harvard.</p>
+          <p>Across all of it, one pattern kept repeating: the expensive problems almost never announced themselves. They arrived as small things. A closing standard that slipped on the same night every week. A handoff between shifts that kept dropping the same task. A repair that got patched four times before anyone noticed it was the same repair. A supplier shorting the same item every other order.</p>
+          <p>The idea behind FieldLoop is simple. The information that predicts those problems already exists inside the operation. What is missing is a way to see it early, with names and dates attached.</p>
+          <p>FieldLoop is technology in service of that insight. Not the other way around.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 4: WHAT FIELDLOOP IS EXPLORING ============ -->
+    <section class="fl-section" aria-labelledby="fl-exploring-title">
+      <div class="fl-inner">
+        <p class="fl-label reveal">Scope</p>
+        <h2 class="fl-h2 reveal" id="fl-exploring-title">What FieldLoop Is Exploring</h2>
+        <p class="fl-body fl-intro reveal">FieldLoop looks at the signals an operation already produces and asks how they relate to one another.</p>
+        <ul class="fl-list reveal">
+          <li>Opening and closing standards</li>
+          <li>Prep execution</li>
+          <li>Labor activity</li>
+          <li>Inventory movement</li>
+          <li>Vendor reliability</li>
+          <li>Maintenance activity</li>
+          <li>Event execution</li>
+          <li>Manager accountability</li>
+          <li>Performance across locations</li>
+        </ul>
+        <p class="fl-body reveal">No single category says much on its own. The relationships between them are where the picture forms.</p>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 5: QUESTIONS WORTH ASKING ============ -->
+    <section class="fl-section fl-section--dark" aria-labelledby="fl-questions-title">
+      <div class="fl-inner">
+        <p class="fl-label reveal">Questions</p>
+        <h2 class="fl-h2 reveal" id="fl-questions-title">Questions Worth Asking</h2>
+        <p class="fl-body fl-intro reveal">The clearest way to describe FieldLoop is not a feature list. It is a set of questions.</p>
+        <ul class="fl-questions reveal">
+          <li>Which recurring issues create the most downstream disruption?</li>
+          <li>Which managers consistently reduce friction?</li>
+          <li>Which locations require disproportionate oversight?</li>
+          <li>Which vendors generate hidden costs?</li>
+          <li>Which maintenance issues keep affecting service quality?</li>
+          <li>Which labor patterns correlate with turnover?</li>
+          <li>Which problems stay invisible until someone connects the dots?</li>
+        </ul>
+        <p class="fl-body reveal">If one of these made you think of something specific in your own operation, that is exactly the kind of conversation FieldLoop is built on.</p>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 6: OPERATOR INVITATION ============ -->
+    <section class="fl-cta" id="fl-invite" aria-labelledby="fl-invite-title">
+      <div class="fl-cta-inner">
+        <p class="fl-label reveal">Get Involved</p>
+        <h2 class="fl-cta-title reveal" id="fl-invite-title">Built With Operators, Not For Operators</h2>
+        <p class="reveal">FieldLoop is being shaped through direct conversations with the people who run things. Restaurant owners, general managers, catering operators, club executives, hospitality leaders of every kind. Especially anyone who has ever inherited a problem that turned out to be six months old.</p>
+        <p class="reveal">There is nothing to buy on this page. What is being collected right now is perspective. If you run an operation and any of this sounds like your Tuesday, thirty minutes of your experience is worth more than any pitch.</p>
+        <a class="btn btn-light reveal" href="mailto:caa@crystallinemgmt.com?subject=FieldLoop">Let's Talk Operations</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-motto">Gather around the table.</p>
+    </div>
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <p class="footer-name">Charlie Accivatti</p>
+        <p class="footer-co">Crystalline Management</p>
+        <p class="footer-loc">Buffalo, New York · Est. 1978</p>
+        <p class="footer-loc">
+          <a href="tel:+17166973697">(716) 697-3697</a> ·
+          <a href="mailto:caa@crystallinemgmt.com" class="email" data-email="caa@crystallinemgmt.com" title="Click to copy">caa@crystallinemgmt.com</a>
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="/#services">Services</a>
+        <a href="/about.html">About</a>
+        <a href="/weddings.html">Weddings</a>
+        <a href="/#waitlist">In The Loop</a>
+        <a href="/#contact">See If We're a Fit</a>
+        <a href="https://www.instagram.com/accivatti" rel="noopener" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="wrap footer-legal">
+      <p>&copy; <span id="year"></span> Charlie Accivatti &middot; Crystalline Management. Buffalo &amp; Western New York. &middot; <a href="/fieldloop">FieldLoop</a></p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
